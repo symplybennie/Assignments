@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --orange:hsl(31, 77%, 52%);
+    --cyan: hsl(184, 100%, 22%);
+    --darkCyan: hsl(179, 100%, 13%);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: auto;
+    height: 100vh;
+    background-color: black;
+}
+.container .section{
+    display: flex;
+    width: 800px;
+    height: auto;
+    background-color: white;
+
+}
+.section .content{
+   padding: 10px;
+
+}
+.section .sedans{
+    background-color: var(--orange);
+}
+.section .suvs{
+    background-color: var(--cyan);
+}
+.section .luxury{
+    background-color: var(--darkCyan);
+}
+.section .style{
+    padding: 20px;
+    margin: 10px auto;
+}
+.section .style .text h1{
+    text-transform: uppercase;
+    font-family: "Big Shoulders Display", Verdana, Geneva, Tahoma, sans-serif;
+}
+.section .style .text p{
+    padding: 5px;
+    font-family: "Lexend Dec", Verdana, Geneva, Tahoma, sans-serif;
+}
+.content button{
+   display: block;
+   margin: 50px auto 5px;
+   margin-left: 10px;
+   text-align: center;
+   width: 8em;
+   height: 2.5em;
+   border-radius: 20px;
+   font-size: 12px;
+   border: none;
+}
+.section .sedans button{
+    color: var(--orange);
+}
+.section .luxury button{
+    color: var(--cyan);
+}
+.section .suvs button{
+    color: var(--darkCyan);
+}
+
+@media screen and (max-width: 700px) and (min-width: 200px) {
+    .container{
+        display: flex;
+        flex-direction: column nowrap;
+        height: auto;
+        padding: 30px;
+    }
+    .container .section{
+        display: flex;
+        flex-flow: column nowrap;
+        width: 250px;
+        box-sizing: border-box;
+        margin: 50px auto;
+        overflow: clip;
+        height: 100%;
+    }
+}
