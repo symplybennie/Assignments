@@ -1,0 +1,301 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: tahoma, Verdana, Geneva, Tahoma, sans-serif;
+  }
+  *{
+    box-sizing: border-box;
+  }
+  /* nav section */
+  header{
+    position: fixed;
+    z-index: 1000;
+    /* left: 0;
+    top: 0; */
+    width: 94.8%;
+    height: auto;
+    margin-left: 40px;
+  }
+  header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+  }
+  header nav  a{
+    text-decoration: none;
+    color: rgb(30, 97, 139);
+    cursor: pointer;
+     letter-spacing: 3px;
+  }
+  header nav  a:hover{
+    background-color: lightskyblue;
+    height: 30px;
+    width: 150px;
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+  }
+  /* hero section */
+  .hero-section{
+    color: #fff;
+    padding: 20px;
+    padding-top: 100px;
+    padding-left: 140px;
+    height: 400px;
+    margin: 0 40px;
+    margin-top: 10px; 
+    /* background-image: url('https://th.bing.com/th/id/R.43e2463199d9acba1f379eaa084daf65?rik=DLc%2fNfoOe1Ws7g&pid=ImgRaw&r=0'); */
+    background-image: url(images/wallpaper.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+  .hero-section::after{
+    /* position: absolute; */
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(235, 174, 235);
+    opacity: .5;
+    z-index: -1;
+  }
+  .hero-section .h1{
+    font-size: 15px;
+  }
+  .hero-section .p{
+    line-height: 25px;
+    font-size: 20px;
+  }
+  .hero-section .btn{
+    width: 150px;
+    height: 30px;
+    background-color:lightblue;
+    color: #fff;
+    border: none;
+    margin-top: 30px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  .hero-section .btn:hover{
+    background-color: lightskyblue;
+    border: none;
+  }
+  .hero-section .btn:focus{
+    background-color: red;
+  }
+
+  /* Project section */
+  #project-section{
+    display: flex;
+    margin: 30px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  #project-section h1{
+    display: block;
+    width: 300px;
+  }
+  #project-section .projects{
+    display: flex;
+    margin: 30px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  #project-section .project{
+    width: 30%;
+    height: 5%;
+    background-color: rgb(30, 97, 139);
+    color: white;
+    gap: 10px;
+    padding: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 5px;
+    border: none;
+  }
+  #project-section .project h3{
+    font-size: 1.25rem;
+  }
+  #project-section .project p{
+    font-size: 1.05rem;
+  }
+  #project-section .project .btn{
+    border: none;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    height: 30px;
+    text-shadow: 5px;
+    color: darkgrey;
+    width: 150px;
+    height: 30px;
+  }
+  #project-section .project .btn:hover{
+    background-color: lightskyblue;
+    border: none;
+    color: white;
+  }
+
+   /* Services section */
+   #services-section{
+    display: flex;
+    margin: 30px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  #services-section h1{
+    display: block;
+    width: 300px;
+  }
+  #services-section .services{
+    display: flex;
+    margin: 30px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  #services-section .service{
+    width: 30%;
+    height: 5%;
+    background-color: rgb(30, 97, 139);
+    color: white;
+    gap: 10px;
+    padding: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 5px;
+    border: none;
+  }
+  #services-section .service h3{
+    font-size: 1.25rem;
+  }
+  #services-section .service p{
+    font-size: 1.05rem;
+  }
+  #services-section .service .btn{
+    border: none;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    height: 30px;
+    text-shadow: 5px;
+    color: darkgrey;
+    width: 150px;
+    height: 30px;
+  }
+  #services-section .service .btn:hover{
+    background-color: lightskyblue;
+    border: none;
+    color: white;
+  }
+
+  /* About Me section */
+  #about-me-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 40px 30px;
+    
+  }
+  #about-me-section .contents{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #about-me-section .contents .image{
+    flex-basis: 30%;
+    text-align: center;
+  }
+  #about-me-section .contents img{
+    width: 250px;
+    height: 300px;
+    border-radius: 50%;
+  }
+  #about-me-section .contents .content{
+    display: flex;
+    flex-flow: column wrap;
+    width: 50%;
+    margin: 0 50px;
+    background-color: aliceblue;
+    padding: 0 30px;
+  }
+  #about-me-section .contents .content .text{
+    display: flex;
+    
+    align-items: center;
+  }
+  #about-me-section .contents .content .text h3{
+    flex-basis: 40%;
+    letter-spacing: 2px;
+  }
+  #about-me-section .contents .content .text p{
+    flex-basis: 60%;
+    line-height: 20px;
+    letter-spacing: 1.5px;
+  }
+
+  /* start of footer */
+  
+footer {
+    background-color: rgb(30, 97, 139);
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 20px;
+    height: 300px;
+    border-radius: 1px;
+}
+footer .logo img{
+  width: 100px;
+  color: #fff;
+  margin-bottom: 20px;
+
+}
+footer .contact-details{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+footer .contact-details .contact{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .contact img{
+  width: 20px;
+}
+footer .footer-links{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  
+}
+footer .footer-links a{
+  color: #fff;
+  text-decoration: none;
+}
+footer .social-media img{
+  width: 30px;
+  margin: 0 10px;
+}
+@media screen (min-width: ) {
+  
+}
